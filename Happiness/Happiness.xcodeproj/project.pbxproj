@@ -167,7 +167,6 @@
 					};
 					3CAED5041AB0C8AB00875027 = {
 						CreatedOnToolsVersion = 6.2;
-						TestTargetID = 3CAED4EF1AB0C8AB00875027;
 					};
 				};
 			};
@@ -359,7 +358,6 @@
 		3CAED5131AB0C8AB00875027 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -371,14 +369,12 @@
 				INFOPLIST_FILE = HappinessTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Happiness.app/Happiness";
 			};
 			name = Debug;
 		};
 		3CAED5141AB0C8AB00875027 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -386,7 +382,6 @@
 				INFOPLIST_FILE = HappinessTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Happiness.app/Happiness";
 			};
 			name = Release;
 		};
@@ -409,6 +404,7 @@
 				3CAED5111AB0C8AB00875027 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3CAED5121AB0C8AB00875027 /* Build configuration list for PBXNativeTarget "HappinessTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +413,7 @@
 				3CAED5141AB0C8AB00875027 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -19,6 +19,10 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ELt-v7-JwM" customClass="FaceView" customModule="Happiness" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="VHx-64-1yr" appends="YES" id="koX-hg-axb"/>
+                                </connections>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -29,8 +33,16 @@
                             <constraint firstItem="ELt-v7-JwM" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="pCm-Xm-dyo"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="faceView" destination="ELt-v7-JwM" id="zMI-0o-BSf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="VHx-64-1yr">
+                    <connections>
+                        <action selector="changeHappiess:" destination="vXZ-lx-hvc" id="2mu-ko-iYM"/>
+                    </connections>
+                </panGestureRecognizer>
             </objects>
         </scene>
     </scenes>
